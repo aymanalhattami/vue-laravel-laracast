@@ -21,4 +21,4 @@ Route::get('skills', function () {
     return ["html", 'css', 'php', 'js', 'wordpress', 'laravel'];
 });
 
-Route::get('projects/create', "ProjectController@create");
+Route::resource('projects', "ProjectController");
